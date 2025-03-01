@@ -46,8 +46,8 @@ export const checkBirthdays = async (env: Env): Promise<string[]> => {
 
 export const setBirthday = async (env: Env, name: string, date: string): Promise<boolean> => {
   try {
-    // Validate date format (YYYY-MM-DD)
-    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+    // Validate date format (MM-DD)
+    if (!/^\d{2}-\d{2}$/.test(date)) {
       return false;
     }
     await env.BIRTHDAYS.put(name, JSON.stringify({ name, date }));
