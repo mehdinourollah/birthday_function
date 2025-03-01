@@ -1,0 +1,19 @@
+name = "birthday-reminder"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Add these lines for custom domain
+routes = [
+  { pattern = "your-domain.com", custom_domain = true }
+]
+
+[triggers]
+crons = ["0 9 * * *"]  # Run at 9:00 AM UTC every day
+
+[vars]
+TELEGRAM_BOT_TOKEN = "your-bot-token"
+TELEGRAM_CHAT_ID = "your-chat-id"
+
+[[kv_namespaces]]
+binding = "BIRTHDAYS"
+id = "your-kv-namespace-id"

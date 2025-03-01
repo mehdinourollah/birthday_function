@@ -1,0 +1,15 @@
+{
+  "name": "birthday-reminder-bot",
+  "version": "1.0.0",
+  "description": "A Telegram bot for birthday reminders using Cloudflare Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "author": "Mehdi Nourollah",
+  "license": "MIT",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241230.0"
+  }
+}

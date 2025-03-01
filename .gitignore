@@ -1,0 +1,22 @@
+# Environment and configuration
+.env
+wrangler.toml
+wrangler.json
+.wrangler
+
+# Dependencies
+node_modules/
+.npm
+.yarn
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.nvimlog
+
+# Build output
+dist/
+build/
